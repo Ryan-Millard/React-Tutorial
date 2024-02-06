@@ -1,3 +1,5 @@
+// similar to a mutator/setter method but for react
+
 import { useState, FC } from 'react';
 
 const UseStateExample:FC<{}> = () => {
