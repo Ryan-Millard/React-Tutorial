@@ -1,3 +1,8 @@
+// Use when you need to cache a value, especially that from a function
+// useful for expensive calculations that could slow down your website (since JavaScript is single-threaded)
+
+// Note: `useMemo` uses more memory. Use it carefully to avoid potential performance issues
+
 import { useState, useEffect, useMemo, FC } from 'react';
 
 const UseMemoExample = ():FC<{}> => {
