@@ -18,7 +18,7 @@ interface NeoclassicalPainter {
 	isFrench: boolean;
 }
 
-function PropsExample(props:NeoclassicalPainter):FC {
+function PropsExample(props:NeoclassicalPainter):FC<{}> {
 // Props can also be dereferenced:
 // 		function PropsExample({ name, age }:NeoclassicalPainter):FC {
 	return (
