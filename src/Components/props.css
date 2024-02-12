@@ -1,0 +1,12 @@
+.painter {
+	font-family: Arial, sans-serif;
+	font-size: 1.3em;
+	padding: 10px 30px 10px 30px;
+	border: 1px solid hsla(0, 0%, 50%, 0.8);
+	margin: 10px;
+	display: inline-block;
+}
+
+.student p {
+	margin: 0;
+}
