@@ -1,4 +1,4 @@
-# Contributing to [REACT-TUTORIALS]
+# Contributing to [REACT-TUTORIAL](https://github.com/Ryan-Millard/React-Tutorial)
 
 Welcome to [REACT-TUTORIALS]! We value your contributions and appreciate your interest in making this project better. Before proceeding with your pull request, please take a moment to review the guidelines below.
 
