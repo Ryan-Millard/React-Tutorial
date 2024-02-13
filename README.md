@@ -1,28 +1,30 @@
 # Contributing to [REACT-TUTORIAL](https://github.com/Ryan-Millard/React-Tutorial)
 
-Welcome to [REACT-TUTORIALS]! We value your contributions and appreciate your interest in making this project better. Before proceeding with your pull request, please take a moment to review the guidelines below.
+## Foreword
+
+Welcome! We value your contributions and appreciate your interest in making this project better. Before proceeding with your pull request, please take a moment to review the guidelines below.
 
 ## Getting Started
 
 1. **Fork the repository**: Click the "Fork" button in the top-right corner of the repository's page on GitHub to create a copy of the project in your GitHub account.
 
 2. **Clone your fork**: Clone the repository to your local machine using the following command:
-   ```bash
-     git clone URL
-   ```
+```bash
+  git clone URL
+```
 
-3.**Navigate to the project directory:**
+3. **Navigate to the project's directory:**
 ```bash
   cd project-name
 ```
 
-4.**Making Changes**
-Create a new branch: Create a new branch for your changes using a descriptive branch name:
+## Making Changes:
+1. **Create a new branch:** Create a new branch to house your changes using a descriptive branch name and then switch to the branch:
 ```bash
   git checkout -b feature/your-feature
 ```
 
-5.**Make your changes:**
+2.**Make your changes:**
 Implement your desired changes or additions to the codebase. Ensure that your changes adhere to the project's coding conventions and style guidelines.
 
 6.**Test your changes:**
@@ -43,7 +45,7 @@ Commit your changes with a clear and descriptive commit message:
 9.**Push your changes:**
 Push your changes to your fork on GitHub:
 ```bash
-  git push origin <name-of-your-branch>
+  git push origin <fork-name/branch-name>
 ```
 
 ## Creating a Pull Request
@@ -66,4 +68,6 @@ Push your changes to your fork on GitHub:
 
 4. **Congratulations!**: Your contribution has been successfully merged into the project. Thank you for your contribution!
 
-Thank you for contributing to [REACT-TUTORIALS]!
+---
+
+Thank you for contributing to [this repository](https://github.com/Ryan-Millard/React-Tutorial)!
