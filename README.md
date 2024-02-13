@@ -8,15 +8,19 @@ Welcome to [REACT-TUTORIALS]! We value your contributions and appreciate your in
 
 2. **Clone your fork**: Clone the repository to your local machine using the following command:
    ```bash
-   git clone URL
+     git clone URL
    ```
 
 3.**Navigate to the project directory:**
-cd project-name
+```bash
+  cd project-name
+```
 
 4.**Making Changes**
 Create a new branch: Create a new branch for your changes using a descriptive branch name:
-git checkout -b feature/your-feature
+```bash
+  git checkout -b feature/your-feature
+```
 
 5.**Make your changes:**
 Implement your desired changes or additions to the codebase. Ensure that your changes adhere to the project's coding conventions and style guidelines.
@@ -26,19 +30,25 @@ Before committing your changes, test them locally to ensure they work as expecte
 
 7.**Staging Changes**
 Stage your changes: Stage the changes you've made using the following command:
-git add .
+```bash
+  git add .
+```
 
 8.**Commit your changes:**
 Commit your changes with a clear and descriptive commit message:
-git commit -m "Add feature: [Brief description of the feature/fix]"
+```bash
+  git commit -m "Add feature: <Brief description of the feature/fix>"
+```
 
 9.**Push your changes:**
 Push your changes to your fork on GitHub:
-git push origin feature/your-feature
+```bash
+  git push origin <name-of-your-branch>
+```
 
 ## Creating a Pull Request
 
-1. **Navigate to GitHub**: Visit the [project's repository](https://github.com/project-owner/project-name) on GitHub.
+1. **Navigate to GitHub**: Visit this [project's repository](https://github.com/project-owner/React-Tutorial) on GitHub.
 
 2. **Initiate the pull request**: Click on the "Pull Request" button and then click on "New pull request".
 
