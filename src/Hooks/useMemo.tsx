@@ -1,49 +1,56 @@
-// Use when you need to cache a value, especially that from a function
-// useful for expensive calculations that could slow down your website (since JavaScript is single-threaded)
-
-// Note: `useMemo` uses more memory. Use it carefully to avoid potential performance issues
-
+// Importing necessary modules from React
 import { useState, useEffect, useMemo, FC } from 'react';
 
-const UseMemoExample = ():FC<{}> => {
-	type themeStyle = {
-		backgroundColor:string;
-		color:string;
-	}
+// Defining a functional component named UseMemoExample
+const UseMemoExample: FC<{}> = () => {
+    // Defining types for theme styles
+    type ThemeStyle = {
+        backgroundColor: string;
+        color: string;
+    }
 
-	const [num, setNum] = useState<number>(0);
-	const [dark, setDark] = useState<boolean>(false);
+    // Using useState hook to manage state for 'num' and 'dark'
+    const [num, setNum] = useState<number>(0);
+    const [dark, setDark] = useState<boolean>(false);
 
-	const doubleNum = useMemo<number>(():number => {
-		return slowFunction(num);
-	}, [num]);
-	const screenTheme = useMemo<themeStyle>(():themeStyle => {
-		return (
-			dark ?
-			{ backgroundColor: 'black', color: 'white'}
-			:
-			{ backgroundColor: 'white', color: 'black' }
-		);
-	}, [dark]);
+    // Using useMemo hook to memoize the result of expensive calculation
+    const doubleNum = useMemo<number>(() => {
+        return slowFunction(num);
+    }, [num]);
 
-	useEffect(():void => {
-		console.log('Screen theme changed');
-	}, [screenTheme]);
+    // Using useMemo hook to memoize the screen theme based on 'dark' state
+    const screenTheme = useMemo<ThemeStyle>(() => {
+        return (
+            dark ?
+            { backgroundColor: 'black', color: 'white' }
+            :
+            { backgroundColor: 'white', color: 'black' }
+        );
+    }, [dark]);
 
-	return (
-		<>
-			<input type="number" value={ num }
-				onChange={ (e):void => setNum(parseInt(e.target.value)) }
-			/>
-			<button onClick={ ():void => setDark((prevDark):void => !prevDark) }> Change theme</button>
-			<div style={ screenTheme }>{ doubleNum }</div>
-		</>
-	);
+    // useEffect hook to log when screen theme changes
+    useEffect(() => {
+        console.log('Screen theme changed');
+    }, [screenTheme]);
+
+    // Returning JSX elements
+    return (
+        <>
+            {/* Input field to update 'num' */}
+            <input type="number" value={num} onChange={(e) => setNum(parseInt(e.target.value))} />
+            {/* Button to toggle 'dark' state */}
+            <button onClick={() => setDark((prevDark) => !prevDark)}> Change theme</button>
+            {/* Displaying the double of 'num' with style based on 'screenTheme' */}
+            <div style={screenTheme}>{doubleNum}</div>
+        </>
+    );
 }
 
-function slowFunction(num):number {
-	for(let i = 0; i < 1000000000; i++) {}
-	return num*2;
+// Function to simulate a slow calculation
+function slowFunction(num: number): number {
+    for (let i = 0; i < 1000000000; i++) {}
+    return num * 2;
 }
 
+// Exporting the functional component
 export default UseMemoExample;
