@@ -18,19 +18,37 @@ function App() {
 	return (
 		<>
 			<div>
-				{/* <UseStateExample /> */}
-				{/* <UseEffectExample /> */}
-				{/* <UseMemoExample /> */}
-				{/* <Card /> */}
-				{/* <Button /> */}
-				{/*
+				<Suspense fallback={<div>Loading useState...</div>}>
+					<UseStateExample />
+				</Suspense>
+
+				<Suspense fallback={<div>Loading useEffect...</div>}>
+					<UseEffectExample />
+				</Suspense>
+
+				<Suspense fallback={<div>Loading useMemo...</div>}>
+					<UseMemoExample />
+				</Suspense>
+
+				<Suspense fallback={<div>Loading card component...</div>}>
+					<Card />
+				</Suspense>
+
+				<Suspense fallback={<div>Loading styling options...</div>}>
+					<Button />
+				</Suspense>
+
+				<Suspense fallback={<div>Loading props...</div>}>
 					<PropsExample name="Jacques-Louis David" age={77} isFrench={true} />
 					<PropsExample name="John William Godward" age={61} isFrench={false} />
 					<PropsExample />
-				*/}
-				<ConditionalRenderingExample isLoggedIn={true} username="great_gandering_swan1298" />
-				<ConditionalRenderingExample isLoggedIn={false} username="great_gandering_swan1298" />
-				<ConditionalRenderingExample />
+				</Suspense>
+
+				<Suspense fallback={<div>Loading conditional rendering...</div>}>
+					<ConditionalRenderingExample isLoggedIn={true} username="great_gandering_swan1298" />
+					<ConditionalRenderingExample isLoggedIn={false} username="great_gandering_swan1298" />
+					<ConditionalRenderingExample />
+				</Suspense>
 			</div>
 		</>
 	);
