@@ -5,6 +5,7 @@ import UseMemoExample from './Hooks/useMemo.tsx';
 import Card from './Components/card.tsx';
 import PropsExample from './Components/props.tsx';
 import ConditionalRenderingExample from './Components/conditionalRendering.tsx';
+import List from './Components/listRendering.tsx';
 
 import Button from './StylingOptions/StylingOptions.tsx';
 
@@ -22,9 +23,12 @@ function App() {
 					<PropsExample name="John William Godward" age={61} isFrench={false} />
 					<PropsExample />
 				*/}
+				{/*
 				<ConditionalRenderingExample isLoggedIn={true} username="great_gandering_swan1298" />
 				<ConditionalRenderingExample isLoggedIn={false} username="great_gandering_swan1298" />
 				<ConditionalRenderingExample />
+				*/}
+				<List />
 			</div>
 		</>
 	);
