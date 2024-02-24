@@ -3,7 +3,6 @@
 // 			avoid slow load times due to many imports
 import { Suspense, lazy } from 'react'; // normally imported
 
-// lazy loading syntax
 const UseStateExample = lazy(() => import('./Hooks/useState.tsx'));
 const UseEffectExample = lazy(() => import('./Hooks/useEffect.tsx'));
 const UseMemoExample = lazy(() => import('./Hooks/useMemo.tsx'));
