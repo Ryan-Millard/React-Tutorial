@@ -1,12 +1,18 @@
-import UseStateExample from './Hooks/useState.tsx';
-import UseEffectExample from './Hooks/useEffect.tsx';
-import UseMemoExample from './Hooks/useMemo.tsx';
+// Suspense: a fallback component used when loading an element
+// lazy: a function that prevents the initial loading of a component to
+// 			avoid slow load times due to many imports
+import { Suspense, lazy } from 'react'; // normally imported
 
-import Card from './Components/card.tsx';
-import PropsExample from './Components/props.tsx';
-import ConditionalRenderingExample from './Components/conditionalRendering.tsx';
+// lazy loading syntax
+const UseStateExample = lazy(() => import('./Hooks/useState.tsx'));
+const UseEffectExample = lazy(() => import('./Hooks/useEffect.tsx'));
+const UseMemoExample = lazy(() => import('./Hooks/useMemo.tsx'));
 
-import Button from './StylingOptions/StylingOptions.tsx';
+const Card = lazy(() => import('./Components/card.tsx'));
+const PropsExample = lazy(() => import('./Components/props.tsx'));
+const ConditionalRenderingExample = lazy(() => import('./Components/conditionalRendering.tsx'));
+
+const Button = lazy(() => import('./StylingOptions/StylingOptions.tsx'));
 
 function App() {
 	return (
