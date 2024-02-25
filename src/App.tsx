@@ -15,6 +15,7 @@ import Navbar from './Components/Navbar.tsx';
 const Card = lazy(() => import('./Components/card.tsx'));
 const PropsExample = lazy(() => import('./Components/props.tsx'));
 const ConditionalRenderingExample = lazy(() => import('./Components/conditionalRendering.tsx'));
+const List = lazy(() => import('./Components/listRendering.tsx'));
 
 const Button = lazy(() => import('./StylingOptions/StylingOptions.tsx'));
 
@@ -75,6 +76,12 @@ function App() {
 							<ConditionalRenderingExample isLoggedIn={true} username="great_gandering_swan1298" />
 							<ConditionalRenderingExample isLoggedIn={false} username="great_gandering_swan1298" />
 							<ConditionalRenderingExample />
+						</Suspense>
+					}/>
+
+					<Route exact path="/list" element={
+						<Suspense fallback={<div>Loading List...</div>}>
+							<List />
 						</Suspense>
 					}/>
 				</Routes>

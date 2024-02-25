@@ -1,0 +1,17 @@
+.listRenderer table {
+	width: 100%;
+}
+
+.listRenderer table, th, td {
+	padding: 15px;
+	text-align: left;
+	border-radius: 5px;
+}
+
+.listRenderer th {
+	background-color: #81ECFB;
+}
+
+.listRenderer tr {
+	background-color: #DFDFDF;
+}
