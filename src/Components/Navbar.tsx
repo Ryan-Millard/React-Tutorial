@@ -27,6 +27,8 @@ const Navbar: FC = () => {
 					<CustomNavLink to="/props">Props</CustomNavLink>
 
 					<CustomNavLink to="/conditional-rendering">Conditional Rendering</CustomNavLink>
+
+					<CustomNavLink to="/list">List Rendering</CustomNavLink>
 				</nav>
 			</div>
 		</div>
