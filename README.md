@@ -2,7 +2,7 @@
 
 ## Foreword
 
-Welcome! We value your contributions and appreciate your interest in making this project better. Before proceeding with your pull request, please take a moment to review the guidelines below.
+Welcome! We value your contributions and appreciate your interest in making this project better. Before proceeding with a pull request, please take a moment to review the guidelines below.
 
 ## Getting Started
 
@@ -10,30 +10,37 @@ Welcome! We value your contributions and appreciate your interest in making this
 
 2. **Clone your fork**: Clone the repository to your local machine using the following command:
 ```bash
-  git clone URL
+  git clone <your-fork's-URL>
 ```
 
 3. **Navigate to the project's directory:**
 ```bash
-  cd project-name
+  cd React-Tutorial
 ```
+
+You should now be ready to work with your fork.
 
 ## Making Changes:
 1. **Create a new branch:** Create a new branch to house your changes using a descriptive branch name and then switch to the branch:
 ```bash
-  git checkout -b feature/your-feature
+  git checkout -b <feature/your-feature-name>
 ```
 
 2.**Make your changes:**
 Implement your desired changes or additions to the codebase. Ensure that your changes adhere to the project's coding conventions and style guidelines.
 
 6.**Test your changes:**
-Before committing your changes, test them locally to ensure they work as expected.
+Before committing your changes, test them locally to ensure that they work as expected.
 
 7.**Staging Changes**
-Stage your changes: Stage the changes you've made using the following command:
+Stage your changes: Stage the changes you've made using one of the following commands:
+To commit the changes made to all files:
 ```bash
   git add .
+```
+To commit changes made to specific files:
+```bash
+  git add <file-name>
 ```
 
 8.**Commit your changes:**
