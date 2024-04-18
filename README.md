@@ -10,7 +10,7 @@ Welcome! We value your contributions and appreciate your interest in making this
 
 2. **Clone your fork**: Clone the repository to your local machine using the following command:
 ```bash
-  git clone URL
+  git clone https://github.com/Ryan-Millard/react-Tutorial.git
 ```
 
 3. **Navigate to the project's directory:**
